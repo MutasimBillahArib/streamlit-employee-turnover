@@ -68,6 +68,9 @@ def get_risk_factors(user_input, shap_values):
     """Generate business-friendly risk explanations"""
     factors = []
     
+    # Calculate overworked internally (this is the fix)
+    overworked = 1 if user_input['monthly_hours'] > 175 else 0
+    
     # 1. Overwork factor (strongest EDA finding)
     if user_input['monthly_hours'] > 175:
         factors.append((
@@ -107,7 +110,8 @@ def get_risk_factors(user_input, shap_values):
         ))
     
     # 5. Satisfaction proxy (using evaluation score)
-    if user_input['last_evaluation'] > 0.8 and user_input['overworked']:
+    # Use the internally calculated 'overworked' variable instead of user_input['overworked']
+    if user_input['last_evaluation'] > 0.8 and overworked:
         factors.append((
             "💔 **Burnout Risk**", 
             "High performer + overworked → prime attrition candidate"
