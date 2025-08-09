@@ -341,10 +341,6 @@ tab1, tab2 = st.tabs(["Model Insights", "Project Details"])
 with tab1:
     st.subheader("Why Trust This Prediction?")
     
-    # Feature importance plot
-    st.image("feature_importance.png", 
-             caption="Top predictors: Last Evaluation, Projects, Tenure, Overwork (Your EDA)")
-    
     # Confusion matrix
     st.image("confusion_matrix.png", 
              caption="Model optimized for catching at-risk employees (fewer false negatives)")
