@@ -148,7 +148,7 @@ def generate_recommendations(risk_level, risk_factors):
 # ======================
 # SIDEBAR - ABOUT & CREDITS
 # ======================
-st.sidebar.image("https://streamlit.io/images/brand/streamlit-mark-color.png", width=100)
+# st.sidebar.image("https://streamlit.io/images/brand/streamlit-mark-color.png", width=100)
 st.sidebar.title("About This App")
 st.sidebar.info("""
 This predictor helps HR teams identify at-risk employees 
@@ -169,8 +169,8 @@ st.sidebar.markdown("""
 - 🌳 Random Forest Classifier (AUC: 0.92)
 """)
 
-st.sidebar.link_button("View Project Code", "https://github.com/your-repo")
-st.sidebar.link_button("HR Dashboard Template", "https://share.streamlit.io/your-app")
+st.sidebar.link_button("View Project Code", "https://github.com/MutasimBillahArib/google-advanced-data-analytics-coursera/tree/main/employee-turnover-analysis")
+# st.sidebar.link_button("HR Dashboard Template", "https://share.streamlit.io/your-app")
 
 # ======================
 # MAIN APP - HERO SECTION
