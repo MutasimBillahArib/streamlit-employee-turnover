@@ -250,7 +250,7 @@ user_input = {
 }
 
 # Preprocess and predict
-input_df = preprocess_input(user_input)
+input_df = preprocess_input(user_input.copy())  # Create a copy before preprocessing
 prediction = model.predict(input_df)[0]
 probability = model.predict_proba(input_df)[0][1]
 
