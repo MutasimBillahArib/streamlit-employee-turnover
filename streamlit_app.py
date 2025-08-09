@@ -368,13 +368,12 @@ with tab2:
     `Python` `pandas` `scikit-learn` `XGBoost` `SHAP` `Streamlit`
     
     **Business Impact**  
-    - Reduce recruitment costs by 20%
     - Enable proactive retention strategies
     - Target high-risk employees with personalized interventions
     """)
     
-    st.link_button("View Full Project Report", "https://your-report-link.com")
-    st.link_button("GitHub Repository", "https://github.com/your-repo")
+    # st.link_button("View Full Project Report", "https://your-report-link.com")
+    st.link_button("GitHub Repository", "https://github.com/MutasimBillahArib/google-advanced-data-analytics-coursera/tree/main/employee-turnover-analysis")
 
 # ======================
 # FOOTER
