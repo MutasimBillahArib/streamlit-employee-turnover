@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 # CONFIGURATION
 # ======================
 st.set_page_config(
-    page_title="Salifort Attrition Predictor",
+    page_title="Employee Attrition Predictor",
     page_icon="🔥",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -179,7 +179,7 @@ st.sidebar.link_button("View Project Code", "https://github.com/MutasimBillahAri
 # ======================
 # MAIN APP - HERO SECTION
 # ======================
-st.title("🔥 Salifort Motors: Employee Attrition Predictor")
+st.title("🔥 Employee Attrition Predictor")
 st.subheader("Proactively retain talent with AI-driven insights")
 st.markdown("""
 Identify at-risk employees *before* they quit. Based on your analysis of 10,500+ employee records, 
