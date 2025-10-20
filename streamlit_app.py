@@ -201,7 +201,7 @@ with col1:
     tenure = st.slider(
         "Tenure (years)", 
         0, 10, 3,
-        help="⚠️ Critical risk: 2-5 years = highest attrition (per your EDA)"
+        help="⚠️ Critical risk: 2-5 years = highest attrition"
     )
     department = st.selectbox(
         "Department", 
@@ -221,7 +221,7 @@ with col2:
     monthly_hours = st.slider(
         "Monthly Hours", 
         80, 300, 180,
-        help="⚠️ Critical risk: >175 hours = 3.2x higher attrition (your finding!)"
+        help="⚠️ Critical risk: >175 hours = 3.2x higher attrition"
     )
     number_project = st.number_input(
         "Number of Projects", 
