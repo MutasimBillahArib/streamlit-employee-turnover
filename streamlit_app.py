@@ -82,7 +82,7 @@ def get_risk_factors(user_input, shap_values):
     if user_input['number_project'] >= 7:
         factors.append((
             "💥 **Critical Workload**", 
-            "Employees with 7+ projects have 100% attrition rate (per your data)"
+            "Employees with 7+ projects have 100% attrition rate"
         ))
     elif user_input['number_project'] > 5:
         factors.append((
@@ -94,7 +94,7 @@ def get_risk_factors(user_input, shap_values):
     if user_input['promotion_last_5years'] == 0 and user_input['number_project'] > 4:
         factors.append((
             "📉 **Promotion Gap**", 
-            "No promotion + high workload → 78% attrition rate in your data"
+            "No promotion + high workload → 78% attrition rate"
         ))
     
     # 4. Tenure risk
