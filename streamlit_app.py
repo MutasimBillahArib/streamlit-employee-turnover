@@ -182,7 +182,7 @@ st.sidebar.link_button("View Project Code", "https://github.com/MutasimBillahAri
 st.title("🔥 Employee Attrition Predictor")
 st.subheader("Proactively retain talent with AI-driven insights")
 st.markdown("""
-Identify at-risk employees *before* they quit. Based on your analysis of 10,500+ employee records, 
+Identify at-risk employees *before* they quit. Based on the analysis of 10,500+ employee records, 
 this tool predicts attrition probability and reveals **actionable drivers** (like overwork or promotion gaps).
 """)
 
